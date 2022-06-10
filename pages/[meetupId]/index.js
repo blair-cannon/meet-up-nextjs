@@ -2,16 +2,16 @@
 // id's should be part of the url
 // and then when we load the page we want to use the id to fetch and display the appropriate data
 
-import { Fragment } from "react";
+import MeetupDetail from "../../components/meetups/MeetupDetail";
 
 function MeetupDetails() {
     return (
-        <Fragment>
-            <img src="https://via.placeholder.com/350x150" alt="meetup image"></img>
-            <h1>A first meetup</h1>
-            <address>Somestreet 1</address>
-            <p>The description</p>
-        </Fragment>
+        <MeetupDetail
+            img='https://via.placeholder.com/350x150'
+            title='A first meetup'
+            address='Some Street 1'
+            description='This is a first meetup'
+        />
     )
 }
 
