@@ -10,7 +10,7 @@ const DUMMY_MEETUPS = [
         description: 'This is a first meetup'
     },
     {
-        id: 'm1',
+        id: 'm2',
         title: 'A Second Meetup',
         image: 'https://via.placeholder.com/350x150',
         address: 'Some address 2, city, state',
