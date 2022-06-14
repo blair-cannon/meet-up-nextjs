@@ -19,7 +19,7 @@ export async function getStaticPaths() {
     //returns an object that describes all possible pages that need to be 
     // pre-generated
     // would also be fetched from database, but hardcoded for now
-    // fallback: false -- pre generate these pages and give a 404 error if
+    // fallback: false, all supported paths are defined here -- pre generate these pages and give a 404 error if
     // a request for any other pages come in
     // fallback: true, pre-generate the following pages and also generate othe
     // paths. when the request comes in
@@ -45,7 +45,6 @@ export async function getStaticProps(context) {
 
     // use context to know which single meetup data to be fetching
     const meetupId = context.params.meetupId;
-    console.log(meetupId)
 
     return {
         props: {
