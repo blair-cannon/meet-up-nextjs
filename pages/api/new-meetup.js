@@ -10,7 +10,7 @@ async function handler(req, res) {
         // what fields are expected from the data
         const { title, image, address, description } = data;
 
-        const client = await MongoClient.connect('mongodb+srv://blairpreston:Babybear8@cluster0.dmjyq.mongodb.net/meetups?retryWrites=true&w=majority');
+        const client = await MongoClient.connect('mongodb+srv://blairpreston1:testpass123@cluster0.dmjyq.mongodb.net/meetup?retryWrites=true&w=majority');
         const db = client.db();
 
         const meetupsCollection = db.collection('meetups');
