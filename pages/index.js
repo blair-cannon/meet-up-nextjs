@@ -1,10 +1,18 @@
 // domain.com/
 import MeetupList from "../components/meetups/MeetupList";
 import { MongoClient } from 'mongodb';
+import Head from 'next/head';
 
 function HomePage(props) {
   return (
-    <MeetupList meetups={props.meetups} />
+    <>
+      {/* need to set head properties for SEO (descriptions) and page titles */}
+      <Head>
+        <title>React Meetings</title>
+        <meta name="description" content="Browse a hug list of highly active React meetups"></meta>
+      </Head>
+      <MeetupList meetups={props.meetups} />
+    </>
   )
 }
 
